@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth Vohra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-6 shadow-md">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-extrabold">Parth Vohra</h1>
+            <p class="mt-2 text-lg">Welcome to my personal webpage!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-700 text-white py-4">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="#about" class="hover:scale-110 transition-transform duration-200 ease-out hover:text-white">About
+                Me</a>
+            <a href="#projects"
+                class="hover:text-gray-300 transition-colors hover:scale-110 transition-transform duration-200 ease-out">Projects</a>
+            <a href="#contact"
+                class="hover:text-gray-300 transition-colors hover:scale-110 transition-transform duration-200 ease-out">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-10 px-4">
+        <div
+            class="bg-white rounded-2xl shadow-xl p-6 md:p-10 flex flex-col items-center justify-center space-y-6 md:flex-row md:space-y-0 md:space-x-10 max-w-4xl mx-auto hover:scale-105 transition-transform duration-200 ease-out">
+
+            <!-- Profile Picture -->
+            <img src="imgs/mango.jpg" alt="Profile Picture"
+                class="w-48 h-48 rounded-full shadow-md object-cover hover:scale-110 transition-transform duration-200 ease-out hover:delay-200" />
+
+            <!-- About Me Section -->
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">About Me</h2>
+                <p class="text-gray-600 max-w-md">
+                    I am a computer engineering student passionate about building things with code and hardware.
+                    I enjoy working on projects that blend creativity with problem-solving, from games and websites
+                    to embedded systems.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto mt-16 px-4 ba">
+
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-200">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Web Scraper</h3>
+                <p class="text-gray-600 mb-4">Brief description of the project goes here. Highlight key features and
+                    technologies used.</p>
+                <a href="https://github.com/pvohra10/web_scraper" class="text-blue-500 hover:underline">View Project</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-200">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title</h3>
+                <p class="text-gray-600 mb-4">Brief description of the project goes here. Highlight key features and
+                    technologies used.</p>
+                <a href="#" class="text-blue-500 hover:underline">View Project</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-200">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title</h3>
+                <p class="text-gray-600 mb-4">Brief description of the project goes here. Highlight key features and
+                    technologies used.</p>
+                <a href="#" class="text-blue-500 hover:underline">View Project</a>
+            </div>
+            <div class="space-x-10"> </div>
+            <!-- Repeat for more projects -->
+        </div>
+
+    </section>
+
+    <!-- Background Image Section -->
+    <section class="relative w-full  h-48 flex items-center justify-center overflow-hidden mx-auto ">
+        <!-- Background image -->
+        <img src="imgs/backround.jpg" alt="Background"
+            class="absolute inset-0 w-full h-full object-cover opacity-40 z-0" />
+
+        <!-- Overlay (optional for extra darkening) -->
+        <div class="absolute inset-0 bg-black opacity-20 z-10"></div>
+
+        <!-- Content -->
+        <div class="relative z-20 text-white text-center px-4">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg">This is a picture of my dog mango.</p>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto mt-16 px-4">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Contact Me</h2>
+        <form class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                <input type="text" id="name"
+                    class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                <input type="email" id="email"
+                    class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                <textarea id="message" rows="4"
+                    class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            <button type="submit"
+                class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors">Send
+                Message</button>
+        </form>
+
+        <!-- Optional: Footer -->
+        <footer class="mt-16 text-center text-sm text-gray-500 pb-4">
+            &copy; 2025 Parth Vohra. All rights reserved.
+        </footer>
+
+        <!-- Scripts -->
+        <script src="script.js"></script>
+</body>
+
+</html>
